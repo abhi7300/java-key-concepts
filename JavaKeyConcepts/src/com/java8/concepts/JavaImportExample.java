@@ -1,4 +1,4 @@
-package com.java.concepts;
+package com.java8.concepts;
 
 public class JavaImportExample {
 
