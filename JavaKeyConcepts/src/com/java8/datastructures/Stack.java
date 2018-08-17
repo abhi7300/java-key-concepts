@@ -20,11 +20,12 @@ public class Stack<T> {
 
 		if (top < capacity) {
 
-			stack.add(++top, item);
+			stack.add(top, item);
+			top++;
 
 		} else {
 
-			new Exception("Stack full!");
+			throw new Exception("Stack full!");
 
 		}
 
@@ -32,15 +33,16 @@ public class Stack<T> {
 
 	}
 
-	public T pop() {
+	public T pop() throws Exception {
 
 		T item = null;
 
-		if (top == 0) {
+		if (stack.size() == 0) {
 
-			new Exception("Stack empty!");
+			throw new Exception("Stack empty!");
+
 		} else {
-			item = stack.get(top--);
+			item = stack.remove(--top);
 		}
 		return item;
 	}
