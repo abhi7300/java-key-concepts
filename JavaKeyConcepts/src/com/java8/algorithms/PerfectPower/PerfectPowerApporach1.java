@@ -1,6 +1,6 @@
 package com.java8.algorithms.PerfectPower;
 
-public class PerfectPower  {
+public class PerfectPowerApporach1  {
 
 	public static int getPerfectPower(long x) {
 
@@ -60,5 +60,17 @@ public class PerfectPower  {
 
 		return pow;
 	}
+	
+	
+	public static void main(String[] args) {
+		
+		
+		int p = PerfectPowerApporach1.getPerfectPower(17);
+
+		System.out.println("p: " + p);
+		
+		
+	}
+
 
 }
