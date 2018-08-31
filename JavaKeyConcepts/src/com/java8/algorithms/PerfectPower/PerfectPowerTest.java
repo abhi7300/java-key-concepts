@@ -5,7 +5,7 @@ public class PerfectPowerTest {
 	public static void main(String[] args) {
 		
 		
-		int p = PerfectPower.getPerfectPower(1600);
+		int p = PerfectPowerApporach1.getPerfectPower(1600);
 
 		System.out.println("p: " + p);
 		
